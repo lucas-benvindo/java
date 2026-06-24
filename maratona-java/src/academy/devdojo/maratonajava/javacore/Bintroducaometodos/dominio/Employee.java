@@ -8,12 +8,19 @@ public class Employee {
     public void dataPrinter() {
         System.out.println("Employee name: " + this.name);
         System.out.println("Employee age: " + this.age);
+        if (salaries == null){
+            return;
+        }
         for (int index = 0; index < salaries.length; index++) { //Prints the user's three salaries.
             System.out.printf("Employee salary %d: £%.2f%n", (index + 1), salaries[index]);
         }
     }
 
     public void averageSalary() {
+        if (salaries == null) {
+            System.out.println("There is no such thing as an average salary.");
+            return;
+        }
         double total = 0;
         for (double salary : salaries) {
             total += salary;
