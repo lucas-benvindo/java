@@ -1,7 +1,5 @@
 package academy.devdojo.maratonajava.javacore.Dcontrutores.dominio;
 
-import javax.lang.model.element.AnnotationMirror;
-
 public class Anime {
     private String nome;
     private String tipo;

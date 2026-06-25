@@ -3,6 +3,7 @@ package academy.devdojo.maratonajava.javacore.Eblocosdeinicializacao.dominio;
 public class Anime {
     private String nome;
     private int[] episodios;
+
     // 1 - Alocado espaço em memória pro objeto
     // 2 - Cada atributo de classe é criado e inicilizado com valores default ou oq for passado
     // 3 - Bloco de inicialização é executado
@@ -20,7 +21,7 @@ public class Anime {
     }
 
     public Anime() {
-        for (int episodio: this.episodios){
+        for (int episodio : this.episodios) {
             System.out.print(episodio + " ");
         }
         System.out.println();
