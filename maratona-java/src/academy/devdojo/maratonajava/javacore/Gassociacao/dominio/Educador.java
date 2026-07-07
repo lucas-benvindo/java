@@ -1,9 +1,9 @@
 package academy.devdojo.maratonajava.javacore.Gassociacao.dominio;
 
-public class Professor {
+public class Educador {
     private String nome;
 
-    public Professor(String nome) {
+    public Educador(String nome) {
         this.nome = nome;
     }
 
