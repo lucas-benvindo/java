@@ -1,0 +1,43 @@
+package academy.devdojo.maratonajava.desafios.dominio;
+
+public class Book {
+    private String title;
+    private String[] authors;
+    private String isbn;
+    private Member member;
+    private Library library;
+
+    public Book(String title, String[] authors, String isbn) {
+        this.title = title;
+        this.authors = authors;
+        this.isbn = isbn;
+    }
+
+    public Member getMember() {
+        return member;
+    }
+
+    void setMember(Member member) {
+        this.member = member;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String[] getAuthors() {
+        return authors.clone();
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public Library getLibrary() {
+        return library;
+    }
+
+    void setLibrary(Library library) {
+        this.library = library;
+    }
+}
