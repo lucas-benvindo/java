@@ -1,9 +1,9 @@
 package academy.devdojo.maratonajava.desafios.dominio;
 
 public class Book {
-    private String title;
-    private String[] authors;
-    private String isbn;
+    private final String title;
+    private final String[] authors;
+    private final String isbn;
     private Member member;
     private Library library;
 

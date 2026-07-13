@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.desafios.dominio;
 import java.util.Arrays;
 
 public class Library {
-    private String name;
+    private final String name;
     private Book[] books = new Book[0];
     private Member[] members = new Member[0];
 
@@ -26,9 +26,7 @@ public class Library {
         }
 
         Book[] newArrayRegisteredBooks = new Book[books.length + 1];
-        for (int index = 0; index < books.length; index++) {
-            newArrayRegisteredBooks[index] = books[index];
-        }
+        System.arraycopy(books, 0, newArrayRegisteredBooks, 0, books.length);
         newArrayRegisteredBooks[books.length] = newBook;
         books = newArrayRegisteredBooks;
         newBook.setLibrary(this);
@@ -47,9 +45,7 @@ public class Library {
         newMember.setRegistrationCode(String.format("%03d", members.length + 1));
 
         Member[] newArrayRegisteredMembers = new Member[members.length + 1];
-        for (int index = 0; index < members.length; index++) {
-            newArrayRegisteredMembers[index] = members[index];
-        }
+        System.arraycopy(members, 0, newArrayRegisteredMembers, 0, members.length);
         newArrayRegisteredMembers[members.length] = newMember;
         members = newArrayRegisteredMembers;
         newMember.addLibrary(this);

@@ -1,7 +1,7 @@
 package academy.devdojo.maratonajava.desafios.dominio;
 
 public class Member {
-    private String name;
+    private final String name;
     private String registrationCode;
     private Book[] books = new Book[0];
     private Library[] libraries = new Library[0];
@@ -12,9 +12,10 @@ public class Member {
 
     public void borrowBook(Book newBook) {
         boolean isMember = false;
-        for (int index = 0; index < libraries.length; index++) {
-            if (newBook.getLibrary() == libraries[index]) {
+        for (Library library : libraries) {
+            if (newBook.getLibrary() == library) {
                 isMember = true;
+                break;
             }
         }
         if (newBook.getMember() != null) {
@@ -23,9 +24,7 @@ public class Member {
             System.out.println(this.name + " could not borrow \"" + newBook.getTitle() + "\": not a member of " + newBook.getLibrary().getName());
         } else {
             Book[] newArrayBooks = new Book[books.length + 1];
-            for (int index = 0; index < books.length; index++) {
-                newArrayBooks[index] = books[index];
-            }
+            System.arraycopy(books, 0, newArrayBooks, 0, books.length);
             newArrayBooks[books.length] = newBook;
             books = newArrayBooks;
             newBook.setMember(this);
@@ -63,9 +62,7 @@ public class Member {
 
     void addLibrary(Library newlibrary) {
         Library[] newArrayLibraries = new Library[libraries.length + 1];
-        for (int index = 0; index < libraries.length; index++) {
-            newArrayLibraries[index] = libraries[index];
-        }
+        System.arraycopy(libraries, 0, newArrayLibraries, 0, libraries.length);
         newArrayLibraries[libraries.length] = newlibrary;
         libraries = newArrayLibraries;
     }
