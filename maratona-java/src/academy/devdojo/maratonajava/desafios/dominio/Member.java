@@ -6,7 +6,7 @@ public class Member {
     private Book[] books = new Book[0];
     private Library[] libraries = new Library[0];
 
-    public Member(String name) { //FIRST TIME AT THE LIBRARY
+    public Member(String name) {
         this.name = name;
     }
 
