@@ -17,6 +17,7 @@ public class Book {
         return member;
     }
 
+    // package-private: only Library/Member (same package) should link this association
     void setMember(Member member) {
         this.member = member;
     }
@@ -25,6 +26,7 @@ public class Book {
         return title;
     }
 
+    // returns a copy, not the original reference, to protect internal state
     public String[] getAuthors() {
         return authors.clone();
     }

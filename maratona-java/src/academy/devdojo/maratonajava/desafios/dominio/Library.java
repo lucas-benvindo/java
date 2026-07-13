@@ -19,6 +19,7 @@ public class Library {
             }
         }
 
+        // a Book can only belong to one Library at a time
         if (newBook.getLibrary() != null) {
             System.out.println(newBook.getTitle() + " already belongs to another library");
             return;
@@ -41,6 +42,8 @@ public class Library {
             }
         }
 
+        // must run before adding to the array, since members.length still
+        // reflects the count before this new member
         newMember.setRegistrationCode(String.format("%03d", members.length + 1));
 
         Member[] newArrayRegisteredMembers = new Member[members.length + 1];

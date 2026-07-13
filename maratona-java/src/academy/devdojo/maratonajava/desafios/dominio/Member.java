@@ -34,6 +34,7 @@ public class Member {
     }
 
     public void returnBook(Book usedBook) {
+        // find the position once, then reuse it below instead of searching twice
         int position = -1;
         for (int index = 0; index < books.length; index++) {
             if (books[index] == usedBook) {
