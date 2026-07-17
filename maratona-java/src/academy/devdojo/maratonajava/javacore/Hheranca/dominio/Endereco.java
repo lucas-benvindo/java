@@ -1,12 +1,11 @@
-package academy.devdojo.maratonajava.javacore.Hherança.dominio;
+package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
 public class Endereco {
     private String rua;
     private String cep;
 
     public void imprime(){
-        Pessoa pessoa = new Pessoa();
-        pessoa.nome = "Lucas";
+        Pessoa pessoa = new Pessoa("Lucas");
     }
 
     public String getRua() {
