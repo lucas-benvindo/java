@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.desafios.dominio;
+package academy.devdojo.maratonajava.desafios.LibrarySystem.dominio;
 
 public class Member {
     private final String name;

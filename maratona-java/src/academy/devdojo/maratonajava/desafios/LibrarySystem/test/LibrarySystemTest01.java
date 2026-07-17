@@ -1,10 +1,10 @@
-package academy.devdojo.maratonajava.desafios.test;
+package academy.devdojo.maratonajava.desafios.LibrarySystem.test;
 
-import academy.devdojo.maratonajava.desafios.dominio.Book;
-import academy.devdojo.maratonajava.desafios.dominio.Library;
-import academy.devdojo.maratonajava.desafios.dominio.Member;
+import academy.devdojo.maratonajava.desafios.LibrarySystem.dominio.Book;
+import academy.devdojo.maratonajava.desafios.LibrarySystem.dominio.Library;
+import academy.devdojo.maratonajava.desafios.LibrarySystem.dominio.Member;
 
-public class LibraryTest01 {
+public class LibrarySystemTest01 {
     public static void main(String[] args) {
         Member joao = new Member("João");
         Member fabio = new Member("Fábio");
