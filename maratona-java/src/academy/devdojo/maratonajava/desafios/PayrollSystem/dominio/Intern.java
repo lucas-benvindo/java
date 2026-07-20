@@ -1,9 +1,14 @@
 package academy.devdojo.maratonajava.desafios.PayrollSystem.dominio;
 
 public class Intern extends Employee {
-    private double stipend;
+    private final double stipend;
 
-    public Intern(String name) {
+    public Intern(String name, double stipend) {
         super(name);
+        this.stipend = stipend;
+    }
+
+    public double getStipend() {
+        return stipend;
     }
 }
