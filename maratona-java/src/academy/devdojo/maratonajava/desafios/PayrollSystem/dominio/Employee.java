@@ -1,10 +1,10 @@
 package academy.devdojo.maratonajava.desafios.PayrollSystem.dominio;
 
-public class Funcionario {
+public class Employee {
     private final String name;
     private final double salary;
 
-    public Funcionario(String name, double salary) {
+    public Employee(String name, double salary) {
         this.name = name;
         this.salary = salary;
     }
