@@ -14,4 +14,8 @@ public class Company {
         return name;
     }
 
+    public void registerEmployee(Employee newEmployee){
+        employees = Arrays.copyOf(employees, employees.length + 1);
+        employees[employees.length - 1] = newEmployee;
+    }
 }
