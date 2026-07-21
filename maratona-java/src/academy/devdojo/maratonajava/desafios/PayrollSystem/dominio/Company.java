@@ -18,4 +18,15 @@ public class Company {
         employees = Arrays.copyOf(employees, employees.length + 1);
         employees[employees.length - 1] = newEmployee;
     }
+
+    public void registerHours(String employeeName, int hours) {
+        for (Employee employee : employees) {
+            if (employee.getName().equals(employeeName)) {
+                employee.setHoursWorked(hours);
+                return;
+            }
+        }
+        System.out.println("Employee not found: " + employeeName);
+    }
+
 }
