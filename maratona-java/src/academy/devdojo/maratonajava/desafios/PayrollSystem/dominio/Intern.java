@@ -13,4 +13,7 @@ public class Intern extends Employee {
         return stipend;
     }
 
+    public double getStipend() {
+        return stipend;
+    }
 }
