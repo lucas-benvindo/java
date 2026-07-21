@@ -2,21 +2,23 @@ package academy.devdojo.maratonajava.desafios.PayrollSystem.dominio;
 
 public class CLT extends Employee {
     private final double salary;
-    private final double productivityBonus;
+    private final double overtimeRate;
+    private static final int STANDARD_HOURS = 220;
 
-    public CLT(String name, double salary, double productivityBonus) {
+    public CLT(String name, double salary, double overtimeRate) {
         super(name);
         this.salary = salary;
-        this.productivityBonus = productivityBonus;
+        this.overtimeRate = overtimeRate;
+    }
+
     }
 
     public double getSalary() {
         return salary;
     }
 
-    public double getProductivityBonus() {
-        return productivityBonus;
+    public double getOvertimeRate() {
+        return overtimeRate;
     }
-
 }
 
