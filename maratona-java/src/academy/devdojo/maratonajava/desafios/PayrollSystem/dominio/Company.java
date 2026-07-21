@@ -37,4 +37,14 @@ public class Company {
         return total;
     }
 
+    public void printTotalPayroll() {
+        System.out.println("Total payroll: " + calculateTotalPayroll());
+    }
+
+    public void printAllPayslips() {
+        for (Employee employee : employees) {
+            employee.printPayslip();
+        }
+    }
+
 }
