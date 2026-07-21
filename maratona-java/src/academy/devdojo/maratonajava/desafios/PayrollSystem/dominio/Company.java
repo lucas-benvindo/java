@@ -47,4 +47,8 @@ public class Company {
         }
     }
 
+    // Returns a copy so callers can't mutate Company's internal array directly.
+    public Employee[] getEmployees() {
+        return employees.clone();
+    }
 }
