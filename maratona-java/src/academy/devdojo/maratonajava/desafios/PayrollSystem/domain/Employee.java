@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.desafios.PayrollSystem.dominio;
+package academy.devdojo.maratonajava.desafios.PayrollSystem.domain;
 
 // Base type shared by all contract types (CLT, PJ, Intern).
 public abstract class Employee {

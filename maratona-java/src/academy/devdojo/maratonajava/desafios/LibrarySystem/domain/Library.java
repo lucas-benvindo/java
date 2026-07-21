@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.desafios.LibrarySystem.dominio;
+package academy.devdojo.maratonajava.desafios.LibrarySystem.domain;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.desafios.PayrollSystem.dominio;
+package academy.devdojo.maratonajava.desafios.PayrollSystem.domain;
 
 // Above hoursThreshold, a reduced rate kicks in (plateau effect).
 public class PJ extends Employee {

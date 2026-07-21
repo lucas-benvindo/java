@@ -1,8 +1,8 @@
 package academy.devdojo.maratonajava.desafios.LibrarySystem.test;
 
-import academy.devdojo.maratonajava.desafios.LibrarySystem.dominio.Book;
-import academy.devdojo.maratonajava.desafios.LibrarySystem.dominio.Library;
-import academy.devdojo.maratonajava.desafios.LibrarySystem.dominio.Member;
+import academy.devdojo.maratonajava.desafios.LibrarySystem.domain.Book;
+import academy.devdojo.maratonajava.desafios.LibrarySystem.domain.Library;
+import academy.devdojo.maratonajava.desafios.LibrarySystem.domain.Member;
 
 public class LibrarySystemTest01 {
     public static void main(String[] args) {

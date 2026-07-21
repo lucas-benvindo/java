@@ -1,9 +1,9 @@
 package academy.devdojo.maratonajava.desafios.PayrollSystem.test;
 
-import academy.devdojo.maratonajava.desafios.PayrollSystem.dominio.CLT;
-import academy.devdojo.maratonajava.desafios.PayrollSystem.dominio.Company;
-import academy.devdojo.maratonajava.desafios.PayrollSystem.dominio.Intern;
-import academy.devdojo.maratonajava.desafios.PayrollSystem.dominio.PJ;
+import academy.devdojo.maratonajava.desafios.PayrollSystem.domain.CLT;
+import academy.devdojo.maratonajava.desafios.PayrollSystem.domain.Company;
+import academy.devdojo.maratonajava.desafios.PayrollSystem.domain.Intern;
+import academy.devdojo.maratonajava.desafios.PayrollSystem.domain.PJ;
 
 public class PayrollSystemTest01 {
 

@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.desafios.PayrollSystem.dominio;
+package academy.devdojo.maratonajava.desafios.PayrollSystem.domain;
 
 public class CLT extends Employee {
     private final double salary;
