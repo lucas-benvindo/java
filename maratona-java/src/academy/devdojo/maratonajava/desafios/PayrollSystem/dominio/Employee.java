@@ -1,10 +1,11 @@
 package academy.devdojo.maratonajava.desafios.PayrollSystem.dominio;
 
+// Base type shared by all contract types (CLT, PJ, Intern).
 public abstract class Employee {
     private final String name;
     private int hoursWorked;
 
-    public Employee(String name) {
+    protected Employee(String name) {
         this.name = name;
     }
 
@@ -14,11 +15,11 @@ public abstract class Employee {
         return name;
     }
 
-    public int getHoursWorked() {
+    int getHoursWorked() {
         return hoursWorked;
     }
 
-    public void setHoursWorked(int hoursWorked) {
+    void setHoursWorked(int hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
 }
