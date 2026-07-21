@@ -12,6 +12,14 @@ public abstract class Employee {
     // No parameters: each subclass already holds the data it needs to calculate.
     abstract double calculatePayment();
 
+    public void printPayslip() {
+        System.out.println("Name: " + name);
+        System.out.println("Contract type: " + getClass().getSimpleName());
+        System.out.println("Hours worked: " + hoursWorked);
+        System.out.println("Payment: " + calculatePayment());
+        System.out.println();
+    }
+
     public String getName() {
         return name;
     }
