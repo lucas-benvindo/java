@@ -13,6 +13,14 @@ public class PJ extends Employee {
         this.hoursThreshold = hoursThreshold;
     }
 
+    @Override
+    double calculatePayment() {
+        if (super.getHoursWorked() <= hoursThreshold) {
+            return super.getHoursWorked() * hourlyRate;
+        }
+        double hourlyRatePayment = hoursThreshold * hourlyRate;
+        double reducedRatePayment = (super.getHoursWorked() - hoursThreshold) * reducedRate;
+        return hourlyRatePayment + reducedRatePayment;
     }
 
     public double getHourlyRate() {
