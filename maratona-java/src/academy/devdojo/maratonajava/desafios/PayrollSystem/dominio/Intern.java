@@ -8,7 +8,9 @@ public class Intern extends Employee {
         this.stipend = stipend;
     }
 
-    public double getStipend() {
+    @Override
+    double calculatePayment(){
         return stipend;
     }
+
 }
