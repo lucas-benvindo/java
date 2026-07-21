@@ -9,7 +9,8 @@ public abstract class Employee {
         this.name = name;
     }
 
-    public abstract double calculatePayment();
+    // No parameters: each subclass already holds the data it needs to calculate.
+    abstract double calculatePayment();
 
     public String getName() {
         return name;
