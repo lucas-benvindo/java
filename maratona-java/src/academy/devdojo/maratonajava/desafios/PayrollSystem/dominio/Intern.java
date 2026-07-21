@@ -9,7 +9,7 @@ public class Intern extends Employee {
     }
 
     @Override
-    double calculatePayment(){
+    double calculatePayment() {
         return stipend;
     }
 

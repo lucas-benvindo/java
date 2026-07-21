@@ -12,7 +12,7 @@ public class CLT extends Employee {
     }
 
     @Override
-    double calculatePayment(){
+    double calculatePayment() {
         // Math.max avoids negative overtime when hoursWorked < STANDARD_HOURS
         double overtimeHours = Math.max(0, super.getHoursWorked() - STANDARD_HOURS);
         double extraHoursPayment = overtimeHours * overtimeRate;

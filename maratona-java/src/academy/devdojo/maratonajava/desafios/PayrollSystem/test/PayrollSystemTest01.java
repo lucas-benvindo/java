@@ -24,6 +24,5 @@ public class PayrollSystemTest01 {
 
         apple.printAllPayslips();
         apple.printTotalPayroll();
-        
     }
 }
