@@ -29,4 +29,12 @@ public class Company {
         System.out.println("Employee not found: " + employeeName);
     }
 
+    double calculateTotalPayroll() {
+        double total = 0;
+        for (Employee employee : employees) {
+            total += employee.calculatePayment();
+        }
+        return total;
+    }
+
 }
