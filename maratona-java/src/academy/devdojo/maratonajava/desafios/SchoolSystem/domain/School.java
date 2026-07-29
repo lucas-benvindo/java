@@ -2,10 +2,18 @@ package academy.devdojo.maratonajava.desafios.SchoolSystem.domain;
 
 public class School {
     private final String name;
-    private final DayOfTheWeek dayOfTheWeek;
+    private final DayOfTheWeek[] dayOfTheWeek;
 
-    public School(String name, DayOfTheWeek dayOfTheWeek) {
+    public School(String name, DayOfTheWeek[] dayOfTheWeek) {
         this.name = name;
         this.dayOfTheWeek = dayOfTheWeek;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public DayOfTheWeek[] getDayOfTheWeek() {
+        return dayOfTheWeek;
     }
 }

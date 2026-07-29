@@ -17,6 +17,34 @@ public enum DayOfTheWeek {
         this.isWeekday = isWeekday;
     }
 
+    public static DayOfTheWeek getDayByNumber(int number){
+        for (DayOfTheWeek dayOfTheWeek: values()){
+            if(dayOfTheWeek.getDayOfTheWeekNumber() ==  number){
+                return dayOfTheWeek;
+            }
+        }
+        return null;
+    }
+
+    public static int getNumberByDayName(String dayOfTheWeekName) {
+        if (dayOfTheWeekName == null) {
+            return 0;
+        }
+        try {
+            DayOfTheWeek dayOfTheWeek = DayOfTheWeek.valueOf(dayOfTheWeekName.trim().toUpperCase());
+            return dayOfTheWeek.getDayOfTheWeekNumber();
+        } catch (IllegalArgumentException e) {
+            return 0;
+        }
+    }
+
+    public DayOfTheWeek getNextDay() {
+        if (this.getDayOfTheWeekNumber() == 7) {
+            return MONDAY;
+        }
+        return getDayByNumber(this.getDayOfTheWeekNumber() + 1);
+    }
+
     public int getDayOfTheWeekNumber() {
         return dayOfTheWeekNumber;
     }
