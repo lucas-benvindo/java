@@ -1,7 +1,7 @@
 package academy.devdojo.maratonajava.desafios.PaymentProcessingSystem.domain;
 
 public class BankSlip extends PaymentMethod{
-    protected static final double FEE = 2;
+    protected static final double FEE_VALUE = 3;
 
     public BankSlip(double purchaseAmount) {
         super(purchaseAmount);
@@ -9,7 +9,7 @@ public class BankSlip extends PaymentMethod{
 
     @Override
     public double calculateTheFee() {
-        return FEE;
+        return FEE_VALUE;
     }
 
     @Override
