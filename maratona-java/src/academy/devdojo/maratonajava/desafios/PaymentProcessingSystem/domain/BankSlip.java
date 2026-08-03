@@ -1,10 +1,17 @@
 package academy.devdojo.maratonajava.desafios.PaymentProcessingSystem.domain;
 
-public class BankSlip extends PaymentMethod{
-    protected static final double FEE_VALUE = 3;
+import java.time.LocalDate;
 
-    public BankSlip(double purchaseAmount) {
+public class BankSlip extends PaymentMethod {
+    protected static final double FEE_VALUE = 3;
+    protected final LocalDate expirationDate;
+
+    public BankSlip(double purchaseAmount, LocalDate expirationDate) {
         super(purchaseAmount);
+        if (expirationDate.isBefore(LocalDate.now())) {
+            throw new IllegalArgumentException("Your bank slip has expired.");
+        }
+        this.expirationDate = expirationDate;
     }
 
     @Override
@@ -13,7 +20,8 @@ public class BankSlip extends PaymentMethod{
     }
 
     @Override
-    public String toProcessPayment() {
-        return "";
+    public void proof() {
+        super.proof();
+        System.out.println("Expiration Date: " + expirationDate);
     }
 }
