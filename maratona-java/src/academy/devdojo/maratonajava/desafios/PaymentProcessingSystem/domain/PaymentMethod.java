@@ -14,9 +14,10 @@ public abstract class PaymentMethod {
 
     public abstract double calculateTheFee();
 
+
     public void proof(){
         System.out.println("Date: " + LocalDate.now());
-        System.out.println("Purchase Amount: R$ " + purchaseAmount);
-        System.out.println("Fee: R$ " + this.calculateTheFee());
+        System.out.printf("Purchase Amount: R$ %.2f%n", purchaseAmount);
+        System.out.printf("Fee: R$ %.2f%n", this.calculateTheFee());
     }
 }

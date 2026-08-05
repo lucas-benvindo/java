@@ -1,10 +1,7 @@
 package academy.devdojo.maratonajava.desafios.PaymentProcessingSystem.test;
 
-
-import academy.devdojo.maratonajava.desafios.PaymentProcessingSystem.domain.BankSlip;
-import academy.devdojo.maratonajava.desafios.PaymentProcessingSystem.domain.CreditCard;
-import academy.devdojo.maratonajava.desafios.PaymentProcessingSystem.domain.DebitCard;
-import academy.devdojo.maratonajava.desafios.PaymentProcessingSystem.domain.Pix;
+import academy.devdojo.maratonajava.desafios.PaymentProcessingSystem.domain.*;
+import academy.devdojo.maratonajava.desafios.PaymentProcessingSystem.service.ProcessadorDePagamentos;
 
 import java.time.LocalDate;
 import java.time.YearMonth;
@@ -27,6 +24,12 @@ public class PaymentProcessingSystemTest01 {
         System.out.println("=================");
         Pix pix = new Pix(170, "11949905875");
         pix.proof();
+
+        System.out.println("====================");
+
+        PaymentMethod[] payments = { bankSlip, creditCard, debitCard, pix };
+        double total = ProcessadorDePagamentos.calculateTotalFee(payments);
+        System.out.printf("Total Fee: R$ %.2f%n", total);
     }
 }
 
