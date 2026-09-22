@@ -1,8 +1,8 @@
-package javacore.Npolimorfismo.test;
+package academy.devdojo.maratonajava.javacore.Npolimorfismo.test;
 
-import javacore.Npolimorfismo.dominio.Computador;
-import javacore.Npolimorfismo.dominio.Produto;
-import javacore.Npolimorfismo.dominio.Tomate;
+import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Computador;
+import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Produto;
+import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Tomate;
 
 public class ProdutoTest02 {
     public static void main(String[] args) {

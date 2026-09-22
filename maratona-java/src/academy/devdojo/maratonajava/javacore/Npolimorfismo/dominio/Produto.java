@@ -1,4 +1,4 @@
-package javacore.Npolimorfismo.dominio;
+package academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio;
 
 public abstract class Produto implements Taxavel {
     protected String nome;
